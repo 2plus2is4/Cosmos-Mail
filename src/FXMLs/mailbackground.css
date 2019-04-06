@@ -1,0 +1,12 @@
+.mail:hover {
+    -fx-fill: #bdc3cc ;
+}
+
+/*.button{
+    mnemonicParsing="false";
+    prefHeight="45.0"
+    prefWidth="261.0"
+    style="-fx-border-width: 0 -fx-background-color: #336dcc; -fx-border-radius: 0;"
+    text="Trash";
+    textFill="WHITE";
+}*/

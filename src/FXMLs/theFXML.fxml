@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.mainController">
+    <children>
+        <ImageView fitHeight="569.0" fitWidth="885.0">
+            <image>
+                <Image url="@../../pix/starwars.jpg" />
+            </image>
+        </ImageView>
+          <VBox alignment="TOP_CENTER" layoutX="565.0" layoutY="-3.0" prefHeight="560.0" prefWidth="250.0">
+              <children>
+            <Region prefHeight="291.0" prefWidth="250.0" />
+                  <TextField fx:id="mailField" prefHeight="23.0" prefWidth="250.0" promptText="Email">
+                      <VBox.margin>
+                          <Insets />
+                      </VBox.margin>
+                      <font>
+                          <Font size="19.0" />
+                      </font>
+                  </TextField>
+                  <PasswordField fx:id="passwordField" prefHeight="41.0" prefWidth="371.0" promptText="Password">
+                      <VBox.margin>
+                          <Insets top="15.0" />
+                      </VBox.margin>
+                      <font>
+                          <Font size="19.0" />
+                      </font>
+                  </PasswordField>
+            <HBox prefHeight="29.0" prefWidth="250.0">
+               <children>
+                  <Region prefHeight="26.0" prefWidth="2.0" />
+                        <CheckBox fx:id="remembermeBox" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Remember me" textAlignment="CENTER" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                        </CheckBox>
+               </children>
+            </HBox>
+                  <Hyperlink fx:id="forgotpassword" text="Forgot my password">
+                      <VBox.margin>
+                          <Insets top="5.0" />
+                      </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink fx:id="nomailsignup" onAction="#signUp" text="Don't have an email? Sign up">
+                      <VBox.margin>
+                          <Insets />
+                      </VBox.margin>
+                  </Hyperlink>
+                  <Button fx:id="signinButton" mnemonicParsing="false" onAction="#signIn" prefHeight="49.0" prefWidth="194.0" style="-fx-background-color: ce2c37;" text="Sign In" textFill="WHITE">
+                      <VBox.margin>
+                          <Insets top="1.0" />
+                      </VBox.margin>
+                      <font>
+                          <Font size="26.0" />
+                      </font>
+                      <cursor>
+                          <Cursor fx:constant="HAND" />
+                      </cursor>
+                  </Button>
+              </children>
+          </VBox>
+      <Label fx:id="errorLabel" prefHeight="42.0" prefWidth="854.0" style="-fx-background-color: ce2c37;" text="The email and password you entered did not match our records. Please double-check and try again." textFill="WHITE" visible="false">
+         <font>
+            <Font name="Uni Sans Heavy Italic" size="21.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
