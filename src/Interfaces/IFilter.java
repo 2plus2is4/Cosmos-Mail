@@ -116,7 +116,7 @@ public class IFilter {
 
     public MyDLinkedList priority() {
         MyDLinkedList lpr = new MyDLinkedList();
-        MypriorityQueue pr = new MypriorityQueue();
+        MyPriorityQueue pr = new MyPriorityQueue();
 
         int i;
         for(i = 0; i < this.mails.size(); ++i) {
@@ -177,4 +177,3 @@ public class IFilter {
         return mailsf;
     }
 }
-

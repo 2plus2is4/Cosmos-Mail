@@ -191,9 +191,9 @@ public class MyApp implements IApp {
         int ii = 0;
         int begin;
         if (allMail != null) {
-            for(begin = allMail.size(); begin > 0; --begin) {
-                allMail.set(0, allMail.get(begin - 1));
-                ++ii;
+            for(begin = allMail.size(); begin > 1; --begin) {
+                allMail.add(ii++, allMail.get(ii));
+                allMail.remove(allMail.size()-1);
             }
         }
 

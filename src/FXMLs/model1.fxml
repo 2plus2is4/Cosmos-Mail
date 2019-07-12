@@ -26,7 +26,7 @@
    <children>
       <ImageView fx:id="background" fitHeight="564.0" fitWidth="879.0" onMouseEntered="#acName" onMouseMoved="#acName">
          <image>
-            <Image url="@../../pix/damn.jpg" />
+            <Image url="@../pix/damn.jpg" />
          </image>
       </ImageView>
       <Region prefHeight="32.0" prefWidth="854.0" />
@@ -54,7 +54,7 @@
                         <Region prefHeight="32.0" prefWidth="21.0" />
                         <ImageView fx:id="refresh" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#ref" onMouseEntered="#acName">
                            <image>
-                              <Image url="@../../pix/refresh.png" />
+                              <Image url="@../pix/refresh.png" />
                            </image>
                            <cursor>
                               <Cursor fx:constant="HAND" />
@@ -161,12 +161,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -192,12 +192,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -224,12 +224,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -256,12 +256,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -288,12 +288,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -320,12 +320,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -352,12 +352,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -384,12 +384,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -416,12 +416,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -448,12 +448,12 @@
                   <Label prefHeight="43.0" prefWidth="251.0" text="About the Assignment.." />
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="26.0" fitWidth="29.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" text="25 April">
@@ -507,7 +507,7 @@
             </TextField>
             <ImageView fitHeight="37.0" fitWidth="38.0">
                <image>
-                  <Image url="@../../pix/Graphicloads-100-Flat-Zoom-search-2.png" />
+                  <Image url="@../pix/Graphicloads-100-Flat-Zoom-search-2.png" />
                </image>
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />

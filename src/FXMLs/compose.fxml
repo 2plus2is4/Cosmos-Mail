@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.mainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ComposeController">
     <children>
         <ImageView fitHeight="564.0" fitWidth="879.0">
             <image>
-                <Image url="@../../pix/damn.jpg" />
+                <Image url="@../pix/damn.jpg" />
             </image>
         </ImageView>
         <Region prefHeight="32.0" prefWidth="854.0" />
@@ -22,7 +22,7 @@
                 <Region prefHeight="70.0" prefWidth="377.0" />
                 <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="171.0">
                     <children>
-                        <Label fx:id="name" prefHeight="39.0" prefWidth="161.0" text="Classes.Account Name">
+                        <Label fx:id="name" prefHeight="39.0" prefWidth="161.0">
                             <font>
                                 <Font name="Star Jedi" size="19.0" />
                             </font>
@@ -177,7 +177,7 @@
                     <children>
                   <ImageView fx:id="attach" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#openAttachment">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -213,7 +213,7 @@
                 </Button>
             <ImageView fx:id="drft" fitHeight="39.0" fitWidth="39.0" onMouseClicked="#draft">
                <image>
-                  <Image url="@../../pix/Graphicloads-100-Flat-Pencil.png" />
+                  <Image url="@../pix/Graphicloads-100-Flat-Pencil.png" />
                </image>
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />

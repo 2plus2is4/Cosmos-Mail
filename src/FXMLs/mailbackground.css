@@ -2,11 +2,15 @@
     -fx-fill: #bdc3cc ;
 }
 
-/*.button{
-    mnemonicParsing="false";
-    prefHeight="45.0"
-    prefWidth="261.0"
-    style="-fx-border-width: 0 -fx-background-color: #336dcc; -fx-border-radius: 0;"
-    text="Trash";
-    textFill="WHITE";
-}*/
+.folder{
+    -fx-border-width: 0;
+    -fx-background-color:  #336dcc;
+    -fx-border-radius: 0;
+    -fx-cursor: HAND;
+    -fx-font-family: UniSansRegular;
+    -fx-font-size: 12.0D;
+    -fx-font-style: italic;
+    -fx-pref-width: 261.0D;
+    -fx-pref-height: 45.0D;
+    -fx-text-fill: WHITE;
+}

@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.mainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.OpenMailController">
     <children>
         <ImageView fitHeight="564.0" fitWidth="879.0">
             <image>
-                <Image url="@../../pix/damn.jpg" />
+                <Image url="@../pix/damn.jpg" />
             </image>
         </ImageView>
         <Region layoutX="519.0" layoutY="144.0" prefHeight="39.0" prefWidth="181.0" />
@@ -22,7 +22,7 @@
                 <Region prefHeight="70.0" prefWidth="377.0" />
                 <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="171.0">
                     <children>
-                        <Label fx:id="name" prefHeight="39.0" prefWidth="161.0" text="Classes.Account Name">
+                        <Label fx:id="name" prefHeight="39.0" prefWidth="161.0">
                             <font>
                                 <Font name="Star Jedi" size="19.0" />
                             </font>
@@ -131,7 +131,7 @@
                                 <Insets left="17.0" right="5.0" />
                             </HBox.margin>
                         </Label>
-                  <Label fx:id="from" prefHeight="34.0" text="mail">
+                  <Label fx:id="from2" prefHeight="34.0">
                      <font>
                         <Font size="23.0" />
                      </font>
@@ -148,7 +148,7 @@
                                 <Insets left="17.0" right="5.0" />
                             </HBox.margin>
                         </Label>
-                  <Label fx:id="subject" prefHeight="34.0" text="sub">
+                  <Label fx:id="subject2" prefHeight="34.0">
                      <font>
                         <Font size="23.0" />
                      </font>
@@ -165,7 +165,7 @@
                         <Insets left="17.0" right="5.0" />
                      </HBox.margin>
                   </Label>
-                  <Label fx:id="date" prefHeight="34.0" text="date">
+                  <Label fx:id="date2" prefHeight="34.0">
                      <font>
                         <Font size="23.0" />
                      </font>
@@ -187,7 +187,7 @@
                <children>
                   <ImageView fitHeight="34.0" fitWidth="34.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="5.0" right="5.0" />
@@ -212,15 +212,15 @@
                <children>
                   <ImageView id="gold" fitHeight="39.0" fitWidth="39.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="5.0" right="5.0" />
                      </HBox.margin>
                   </ImageView>
-                  <ImageView id="silver" fitHeight="39.0" fitWidth="39.0">
+                  <ImageView id="silver" fx:id="star" fitHeight="39.0" fitWidth="39.0">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-.png" />
                      </image>
                      <HBox.margin>
                         <Insets left="5.0" right="5.0" />
@@ -233,7 +233,7 @@
             </StackPane>
             <ImageView fx:id="delete" fitHeight="39.0" fitWidth="39.0" onMouseClicked="#trsh">
                <image>
-                  <Image url="@../../pix/Graphicloads-100-Flat-Recyclebin.png" />
+                  <Image url="@../pix/Graphicloads-100-Flat-Recyclebin.png" />
                </image>
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />
@@ -248,7 +248,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <image>
-                  <Image url="@../../pix/modules_orders.png" />
+                  <Image url="@../pix/modules_orders.png" />
                </image>
                <HBox.margin>
                   <Insets left="5.0" right="5.0" />
@@ -259,13 +259,13 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <image>
-                  <Image url="@../../pix/Graphicloads-100-Flat-Pencil.png" />
+                  <Image url="@../pix/Graphicloads-100-Flat-Pencil.png" />
                </image>
                <HBox.margin>
                   <Insets right="5.0" />
                </HBox.margin>
             </ImageView>
-            <ComboBox fx:id="fltr" onAction="#filter" prefHeight="39.0" prefWidth="87.0" promptText="Filter" visibleRowCount="4" />
+            <ComboBox fx:id="fltr" onAction="#filterit" prefHeight="39.0" prefWidth="87.0" promptText="Filter" visibleRowCount="4" />
          </children></HBox>
         <Separator layoutX="263.0" layoutY="135.0" prefHeight="21.0" prefWidth="616.0" />
         <VBox fx:id="newfolderBox" alignment="TOP_CENTER" layoutX="23.0" layoutY="170.0" prefHeight="99.0" prefWidth="217.0" style="-fx-background-color: #7ad372;" visible="false">
@@ -303,7 +303,7 @@
                 </HBox>
             </children>
         </VBox>
-      <VBox fx:id="moveLabel" alignment="TOP_CENTER" layoutX="420.0" layoutY="13.0" prefHeight="77.0" prefWidth="161.0" style="-fx-background-color: #7ad372;" visible="false">
+      <VBox fx:id="moveLabel" alignment="TOP_CENTER" layoutX="502.0" layoutY="149.0" prefHeight="77.0" prefWidth="161.0" style="-fx-background-color: #7ad372;" visible="false">
          <children>
             <Region prefHeight="10.0" prefWidth="263.0" />
             <TextField fx:id="mvtof" onKeyReleased="#checkfoldername" prefHeight="25.0" prefWidth="194.0" promptText="Folder Name">

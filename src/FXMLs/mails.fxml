@@ -22,11 +22,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.mainController">
+<AnchorPane prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MailsController">
     <children>
         <ImageView fx:id="background" fitHeight="564.0" fitWidth="879.0">
             <image>
-                <Image url="@../../pix/damn.jpg" />
+                <Image url="@../pix/damn.jpg" />
             </image>
         </ImageView>
         <Region prefHeight="32.0" prefWidth="854.0" />
@@ -54,7 +54,7 @@
                                 <Region prefHeight="32.0" prefWidth="21.0" />
                                 <ImageView fx:id="refresh" fitHeight="29.0" fitWidth="31.0" onMouseClicked="#ref" styleClass="button">
                                     <image>
-                                        <Image url="@../../pix/refresh.jpg" />
+                                        <Image url="@../pix/refresh.jpg" />
                                     </image>
                                     <cursor>
                                         <Cursor fx:constant="HAND" />
@@ -92,7 +92,7 @@
                     <content>
                         <VBox fx:id="foldersBox" prefWidth="263.0" style="-fx-background-color: #ffffff;">
                             <children>
-                                <Button id="allmail" fx:id="allmail" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" text="All Mail" textFill="WHITE">
+                                <Button id="allmail" fx:id="allmail" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" styleClass="folder" text="All Mail" textFill="WHITE">
                                     <font>
                                         <Font name="Uni Sans Heavy Italic" size="12.0" />
                                     </font>
@@ -100,7 +100,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button id="inbox" fx:id="inbox" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" text="Inbox" textFill="WHITE">
+                                <Button id="inbox" fx:id="inbox" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" styleClass="folder" text="Inbox" textFill="WHITE">
                                     <font>
                                         <Font name="Uni Sans Heavy Italic" size="12.0" />
                                     </font>
@@ -108,7 +108,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button id="sent" fx:id="sent" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" text="Sent" textFill="WHITE">
+                                <Button id="sent" fx:id="sent" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" styleClass="folder" text="Sent" textFill="WHITE">
                                     <font>
                                         <Font name="Uni Sans Heavy Italic" size="12.0" />
                                     </font>
@@ -116,7 +116,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button id="starred" fx:id="starred" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" text="Starred" textFill="WHITE">
+                                <Button id="starred" fx:id="starred" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" styleClass="folder" text="Starred" textFill="WHITE">
                                     <font>
                                         <Font name="Uni Sans Heavy Italic" size="12.0" />
                                     </font>
@@ -124,7 +124,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button id="draft" fx:id="draft" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" text="Draft" textFill="WHITE">
+                                <Button id="draft" fx:id="draft" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" styleClass="folder" text="Draft" textFill="WHITE">
                                     <font>
                                         <Font name="Uni Sans Heavy Italic" size="12.0" />
                                     </font>
@@ -132,7 +132,7 @@
                                         <Cursor fx:constant="HAND" />
                                     </cursor>
                                 </Button>
-                                <Button id="trash" fx:id="trash" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" text="Trash" textFill="WHITE">
+                                <Button id="trash" fx:id="trash" mnemonicParsing="false" onAction="#openFolder" prefHeight="45.0" prefWidth="261.0" style="-fx-border-width: 0; -fx-background-color: #336dcc; -fx-border-radius: 0;" styleClass="folder" text="Trash" textFill="WHITE">
                                     <font>
                                         <Font name="Uni Sans Heavy Italic" size="12.0" />
                                     </font>
@@ -148,7 +148,7 @@
         </VBox>
         <VBox alignment="TOP_CENTER" layoutX="263.0" layoutY="143.0" prefHeight="420.0" prefWidth="616.0">
             <children>
-                <HBox id="mail1" fx:id="mail" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+                <HBox id="mail0" fx:id="mail0" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                     <children>
                         <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                         <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -162,23 +162,23 @@
                         <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                         <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                             <image>
-                                <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                                <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                             </image>
                             <HBox.margin>
                                 <Insets top="4.0" />
                             </HBox.margin>
                         </ImageView>
-                          <ImageView fx:id="silverstar" fitHeight="28.0" fitWidth="28.0" visible="false">
+                          <ImageView fx:id="silverstar0" fitHeight="28.0" fitWidth="28.0" visible="false">
                               <image>
-                                  <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                                  <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                               </image>
                               <HBox.margin>
                                   <Insets top="2.0" />
                               </HBox.margin>
                           </ImageView>
-                  <ImageView fx:id="flag" fitHeight="35.0" fitWidth="35.0" visible="false">
+                  <ImageView fx:id="flag0" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                         <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -191,7 +191,7 @@
                         <Cursor fx:constant="HAND" />
                     </cursor>
                 </HBox>
-            <HBox id="mail2" fx:id="mail1" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail1" fx:id="mail1" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -205,7 +205,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -213,7 +213,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar1" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -221,7 +221,7 @@
                   </ImageView>
                   <ImageView fx:id="flag1" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -234,7 +234,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail3" fx:id="mail2" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail2" fx:id="mail2" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -248,7 +248,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -256,7 +256,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar2" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -264,7 +264,7 @@
                   </ImageView>
                   <ImageView fx:id="flag2" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -277,7 +277,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail4" fx:id="mail3" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail3" fx:id="mail3" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -291,7 +291,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -299,7 +299,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar3" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -307,7 +307,7 @@
                   </ImageView>
                   <ImageView fx:id="flag3" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -320,7 +320,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail5" fx:id="mail4" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail4" fx:id="mail4" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -334,7 +334,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -342,7 +342,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar4" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -350,7 +350,7 @@
                   </ImageView>
                   <ImageView fx:id="flag4" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -363,7 +363,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail6" fx:id="mail5" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail5" fx:id="mail5" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -377,7 +377,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -385,7 +385,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar5" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -393,7 +393,7 @@
                   </ImageView>
                   <ImageView fx:id="flag5" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -406,7 +406,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail7" fx:id="mail6" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail6" fx:id="mail6" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -420,7 +420,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -428,7 +428,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar6" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -436,7 +436,7 @@
                   </ImageView>
                   <ImageView fx:id="flag6" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -449,7 +449,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail8" fx:id="mail7" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail7" fx:id="mail7" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -463,7 +463,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -471,7 +471,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar7" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -479,7 +479,7 @@
                   </ImageView>
                   <ImageView fx:id="flag7" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -492,7 +492,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail9" fx:id="mail8" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail8" fx:id="mail8" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -506,7 +506,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -514,7 +514,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar8" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -522,7 +522,7 @@
                   </ImageView>
                   <ImageView fx:id="flag8" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -535,7 +535,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </HBox>
-            <HBox id="mail10" fx:id="mail9" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
+            <HBox id="mail9" fx:id="mail9" onMouseClicked="#open" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="36.0" prefWidth="616.0" styleClass="mail" stylesheets="@mailbackground.css" visible="false">
                <children>
                   <Region prefHeight="36.0" prefWidth="11.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" />
                   <Label prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="Ziad Taha">
@@ -549,7 +549,7 @@
                   <Label prefHeight="36.0" prefWidth="274.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="About the Assignment.." />
                   <ImageView fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Attach-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Attach-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="4.0" />
@@ -557,7 +557,7 @@
                   </ImageView>
                   <ImageView fx:id="silverstar9" fitHeight="28.0" fitWidth="28.0" visible="false">
                      <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Favourite-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Favourite-2.png" />
                      </image>
                      <HBox.margin>
                         <Insets top="2.0" />
@@ -565,7 +565,7 @@
                   </ImageView>
                   <ImageView fx:id="flag9" fitHeight="35.0" fitWidth="35.0" visible="false">
                      <image>
-                        <Image url="@../../pix/flag-icon.png" />
+                        <Image url="@../pix/flag-icon.png" />
                      </image>
                   </ImageView>
                   <Label prefHeight="54.0" prefWidth="59.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" text="25 April">
@@ -619,7 +619,7 @@
                 </TextField>
                 <ImageView fx:id="search" fitHeight="37.0" fitWidth="38.0" onMouseClicked="#srch">
                     <image>
-                        <Image url="@../../pix/Graphicloads-100-Flat-Zoom-search-2.png" />
+                        <Image url="@../pix/Graphicloads-100-Flat-Zoom-search-2.png" />
                     </image>
                     <HBox.margin>
                         <Insets left="5.0" right="5.0" />

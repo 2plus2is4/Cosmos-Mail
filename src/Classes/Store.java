@@ -491,7 +491,7 @@ public class Store {
         }
 
         obj.put("reciever", rec);
-        if (mail.getAttach().equals((Object) null)) {
+        if (mail.getAttach()==null) {
             obj.put("attachments numbers", 0);
         } else {
             obj.put("attachments numbers", mail.getAttach().size());

@@ -157,4 +157,3 @@ public class MyDLinkedList implements ILinkedList {
         this.size = size1;
     }
 }
-

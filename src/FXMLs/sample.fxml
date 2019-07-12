@@ -8,11 +8,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.mainController">
+<AnchorPane prefHeight="560.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignUpController">
     <children>
         <ImageView fitHeight="583.0" fitWidth="889.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-35.0" AnchorPane.topAnchor="0.0">
             <image>
-                <Image url="@../../pix/signup.jpg" />
+                <Image url="@../pix/signup.jpg" />
             </image>
         </ImageView>
         <VBox alignment="TOP_CENTER" layoutX="576.0" prefHeight="600.0" prefWidth="274.0">
@@ -28,7 +28,7 @@
                 </TextField>
                 <HBox prefHeight="35.0" prefWidth="235.0">
                     <children>
-                        <TextField fx:id="mailField1" prefHeight="35.0" prefWidth="179.0" promptText="Email Address">
+                        <TextField fx:id="mailField" prefHeight="35.0" prefWidth="179.0" promptText="Email Address">
                             <font>
                                 <Font size="15.0" />
                             </font>
@@ -57,12 +57,12 @@
                         <Insets bottom="4.0" />
                     </VBox.margin>
                 </Label>
-            <Hyperlink fx:id="signinLink" onAction="#signIn1" text="Already got an account? Sign in here">
+            <Hyperlink fx:id="signinLink" onAction="#signIn" text="Already got an account? Sign in here">
                <VBox.margin>
                   <Insets bottom="15.0" />
                </VBox.margin>
             </Hyperlink>
-                <Button fx:id="signupButton" mnemonicParsing="false" onAction="#signUp1" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #27a7d2;" text="Sign Up" textFill="WHITE">
+                <Button fx:id="signupButton" mnemonicParsing="false" onAction="#signUp" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #27a7d2;" text="Sign Up" textFill="WHITE">
                     <font>
                         <Font size="22.0" />
                     </font>
